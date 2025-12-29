@@ -1,6 +1,5 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Build Status](https://github.com/muhos/ParaFROST/actions/workflows/test-build.yml/badge.svg)](https://github.com/muhos/ParaFROST/actions/workflows/test-build.yml)
-# ParaFROST
+
+# ParaFROST - Parallel SAT Solver with GPU Acceleration                                                            
 ParaFROST stands for Parallel Formal Reasoning about SaTisfiability. 
 It is a parallel SAT solver with GPU-accelerated inprocessing capable of harnessing NVIDIA CUDA-enabled GPUs in applying modern inprocessing tecnhiques in parallel. 
 The CDCL search is built from scratch with various optimisations based on CaDiCaL heuristics (see our paper in [FMSD'23](https://link.springer.com/article/10.1007/s10703-023-00432-z)).
@@ -61,6 +60,3 @@ For more options, type `parafrost -h` or `parafrost --helpmore`.
 
 # Incremental Solving
 ParaFROST supports incremental solving to `add`/`remove` variables or clauses incrementally while solving with assumptions if needed. A fully configurable interface to integrate ParaFROST with CBMC model checker is created here (https://github.com/muhos/gpu4bmc). A similar interface can be created to work with ParaFROST in any SAT-based bounded model checker.
-
-# Citation
-Please cite our latest paper [FMSD'23](https://link.springer.com/article/10.1007/s10703-023-00432-z) when using ParaFROST.
